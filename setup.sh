@@ -4,7 +4,7 @@
 SCRIPT_URL="https://raw.githubusercontent.com/sherlock6147/naive_db_backup/main/db_backup.py"
 
 # Destination directory where the backup script will be stored
-DEST_DIR="~/.backups_utils"
+DEST_DIR="backups_utils"
 mkdir -p "$DEST_DIR"
 
 # File name for the backup script
@@ -15,7 +15,7 @@ SCRIPT_PATH="$DEST_DIR/$SCRIPT_NAME"
 PYTHON_BIN="/usr/bin/python3"
 
 # Log file for backup script output
-LOG_FILE="~/,backups/logfile.log"
+LOG_FILE=".backups/logfile.log"
 
 # Download the backup script
 wget -O "$SCRIPT_PATH" "$SCRIPT_URL"
